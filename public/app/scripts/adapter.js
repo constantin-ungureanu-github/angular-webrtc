@@ -3,4 +3,3 @@ window.RTCIceCandidate = window.RTCIceCandidate || window.mozRTCIceCandidate || 
 window.RTCSessionDescription = window.RTCSessionDescription || window.mozRTCSessionDescription || window.webkitRTCSessionDescription;
 window.URL = window.URL || window.mozURL || window.webkitURL;
 window.navigator.getUserMedia = window.navigator.getUserMedia || window.navigator.webkitGetUserMedia || window.navigator.mozGetUserMedia;
-
