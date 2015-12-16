@@ -1,8 +1,3 @@
-// Karma configuration
-// http://karma-runner.github.io/0.12/config/configuration-file.html
-// Generated on 2014-12-22 using
-// generator-karma 0.8.3
-
 module.exports = function(config) {
   'use strict';
 
@@ -15,8 +10,6 @@ module.exports = function(config) {
 
     // testing framework to use (jasmine/mocha/qunit/...)
     frameworks: ['jasmine'],
-
-    // list of files / patterns to load in the browser
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
@@ -43,28 +36,12 @@ module.exports = function(config) {
     browsers: [
       'PhantomJS'
     ],
-
-    // Which plugins to enable
     plugins: [
       'karma-phantomjs-launcher',
       'karma-jasmine'
     ],
-
-    // Continuous Integration mode
-    // if true, it capture browsers, run tests and exit
     singleRun: false,
-
     colors: true,
-
-    // level of logging
-    // possible values: LOG_DISABLE || LOG_ERROR || LOG_WARN || LOG_INFO || LOG_DEBUG
     logLevel: config.LOG_INFO,
-
-    // Uncomment the following lines if you are using grunt's server to run the tests
-    // proxies: {
-    //   '/': 'http://localhost:9000/'
-    // },
-    // URL root prevent conflicts with the site root
-    // urlRoot: '_karma_'
   });
 };
